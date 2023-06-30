@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    list-style-type: none;
+}
+body{
+    background-color: beige;
+}
+input[type="button"][onclick="onclick1()"]{
+    background-color: white;
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    box-shadow: #bcbcbc 2px 2px 5px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    position: fixed;
+}
+textarea{
+    margin-left: 10%;
+    margin-top: 200px;
+    width: 80%;
+    height: 500px;
+    padding: 10px;
+    font-size: 15px;
+}
+input[type="button"]:not([onclick="onclick1()"]){
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 25px;
+    box-shadow: #bcbcbc 2px 2px 5px;
+    cursor: pointer;
+}

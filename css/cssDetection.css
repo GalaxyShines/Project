@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    border: none;
+    outline: none;
+}
+body{
+    background-color: aqua;
+}
+.menu button{
+	background-color: white;
+	height: 100px;
+	width: 300px;
+	border-radius: 5px;
+	box-shadow: #6c6c6c 2px 2px 5px;
+	cursor: pointer;
+    font-size: 50px;
+}
+.menu a:nth-child(1) button{
+	background-color: #d9d9d9;
+}

@@ -1,0 +1,23 @@
+*{
+    outline: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color: #458af3;
+}
+.top{
+    width: 100%;
+    height: 10vh;
+    background-color: white;
+    padding: 0 50px;
+}
+.top>p{
+    color: #458af3;
+    font-size: 50px;
+    font-family: "微软雅黑";
+    line-height: 10vh;
+}

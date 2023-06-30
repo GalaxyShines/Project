@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ch">
+	<head>
+		<meta charset="UTF-8">
+		<title>银行模拟器</title>
+		<link rel="stylesheet" href="./css/cssBankDeskTop.css">
+	</head>
+	<body>
+		<div class="menu">
+			<a href="./detection.html" target="_blank"><button>主页</button></a>
+			<a href="#"><button>模拟银行</button></a>
+		</div>
+		<div class="body">
+			<div class="inputArea">
+				<label for="put1"></label><input type="number" id="getInput" placeholder="请输入整数操作金额">
+			</div>
+			<div class="buttonArea">
+				<button type="button" id="setting" onclick="setting()"><span>设置账户初始金额</span></button>
+				<button type="button" id="getIn" onclick="getIn()"><span>存款</span></button>
+				<button type="button" id="getOut" onclick="getOut()"><span>取款</span></button>
+				<button type="button" id="view" onclick="view()"><span>查询余额</span></button>
+			</div>
+			<div class="textArea">
+				
+			</div>
+		</div>
+		<!-- <script src="js/js1.js"></script> -->
+		<script src="./js/jsBank.js"></script>
+	</body>
+</html>
