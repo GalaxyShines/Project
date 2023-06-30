@@ -1,6 +1,6 @@
 if (screen.width<=768) {
-    window.location.href=".https://galaxyshines.github.io/Project/indexMobile.html";
+    window.location.href="../indexMobile.html";
 } else {
-    window.location.href=".https://galaxyshines.github.io/Project/indexDeskTop.html";
+    window.location.href="../indexDeskTop.html";
     // alert(detectDeviceType());
 }

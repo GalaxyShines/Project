@@ -1,16 +1,16 @@
 function onclick1(){
-    window.location.href=".https://galaxyshines.github.io/Project/bankMobile.html";
+    window.location.href="../bankMobile.html";
 }
 function onclick2(){
-    window.location.href=".https://galaxyshines.github.io/Project/calculatorMobile.html";
+    window.location.href="../calculatorMobile.html";
 }
 function onclick3(){
-    window.location.href=".https://galaxyshines.github.io/Project/bankDeskTop.html";
+    window.location.href="../bankDeskTop.html";
 }
 function onclick4(){
-    window.location.href=".https://galaxyshines.github.io/Project/calculatorDeskTop.html";
+    window.location.href="../calculatorDeskTop.html";
 }
 function onclick5(){
-    // window.location.href=".https://galaxyshines.github.io/Project/jsLabConsole.html";
-    window.location.href=".https://galaxyshines.github.io/Project/Error.html";
+    // window.location.href="../jsLabConsole.html";
+    window.location.href="../Error.html";
 }

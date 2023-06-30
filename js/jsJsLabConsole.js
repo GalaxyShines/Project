@@ -1,5 +1,5 @@
 function onclick1(){
-    window.location.href=".https://galaxyshines.github.io/Project/indexDeskTop.html";
+    window.location.href="../indexDeskTop.html";
 }
 function action(){
     var getInput=document.getElementById('textarea').value;

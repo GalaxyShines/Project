@@ -8,5 +8,5 @@ function get(){
     }
 }
 function goHome(){
-    window.location.href=".https://galaxyshines.github.io/Project/indexDeskTop.html";
+    window.location.href="../indexDeskTop.html";
 }
