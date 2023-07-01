@@ -1,4 +1,5 @@
-var ulFirst1=document.getElementsByClassName("ulFirst")[0];
-ulFirst1.addEventListener("mouseover",function () {
-    ulFirst1.style.transform="translate(+10px)";
+var ulFirst1=document.querySelector(".ulFirst");
+var liAll=ulFirst1.querySelectorAll("li");
+liAll.addEventListener("mouseover",function () {
+    liAll.style.transform="translate(+10px)";
 });
