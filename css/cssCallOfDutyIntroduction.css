@@ -45,11 +45,11 @@ body{
 }
 .show1L{
     width: 10%;
-    height: inherit;
+    height: 85vh;
 }
 .show1R{
     width: 90%;
-    height: inherit;
+    height: 85vh;
 }
 .show1L,.show1R{
     float: left;
@@ -71,6 +71,22 @@ body{
     font-size: 20px;
     box-shadow: 5px 5px 10px #000000;
 }
-.show1L ul li:hover{
-    transform: translate(+5px);
+li:hover{
+    cursor: pointer;
+}
+[class^="show1RD"],[class^="show1RE"],[class^="show1RF"],.show1RG5{
+    line-height: 85vh;
+    width: 58.5%;
+    height: 85vh;
+    position: absolute;
+}
+/* #D3:hover + .show1R .show1RD3{
+    z-index: 14;
+} */
+.ground{
+    width: 58.5%;
+    height: 85vh;
+    background-color: black;
+    position: absolute;
+    z-index: 14;
 }
