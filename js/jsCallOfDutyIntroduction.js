@@ -17,93 +17,28 @@ show1L.forEach(function (li){
         li.style.transform="translate(-0px)";
     });
 });
-// function bindHoverEvent() {
-//     var liList = document.querySelectorAll(".show1L ul li");
-//     liList.forEach(function (li) {
-//         li.addEventListener("mouseover", function () {
-//             var targetId = li.dataset.target;
-//             var target = document.getElementById(targetId);
-//             target.style.display = "block";
-//         });
-//         li.addEventListener("mouseout", function () {
-//             var targetId = li.dataset.target;
-//             var target = document.getElementById(targetId);
-//             target.style.display = "none";
-//         });
-//     });
-// }
-// window.onload = function () {
-//     bindHoverEvent();
-// };
 
+const mouseEvents = ['mouseover', 'mouseout'];
+const sets = [
+  { id: 'D3', className: 'show1RD3' },
+  { id: 'D4', className: 'show1RD4' },
+  { id: 'D5', className: 'show1RD5' },
+  { id: 'E5', className: 'show1RE5' },
+  { id: 'E6', className: 'show1RE6' },
+  { id: 'E7', className: 'show1RE7' },
+  { id: 'F4', className: 'show1RF4' },
+  { id: 'F5', className: 'show1RF5' },
+  { id: 'F6', className: 'show1RF6' },
+  { id: 'G5', className: 'show1RG5' },
+];
 
-var showSetD3=document.getElementById("D3");
-showSetD3.addEventListener("mouseover",function () {
-    document.querySelector(".show1RD3").style.zIndex="15";
-});
-showSetD3.addEventListener("mouseout",function () {
-    document.querySelector(".show1RD3").style.zIndex="-1";
-});
-var showSetD4=document.getElementById("D4");
-showSetD4.addEventListener("mouseover",function () {
-    document.querySelector(".show1RD4").style.zIndex="15";
-});
-showSetD4.addEventListener("mouseout",function () {
-    document.querySelector(".show1RD4").style.zIndex="-1";
-});
-var showSetD5=document.getElementById("D5");
-showSetD5.addEventListener("mouseover",function () {
-    document.querySelector(".show1RD5").style.zIndex="15";
-});
-showSetD5.addEventListener("mouseout",function () {
-    document.querySelector(".show1RD5").style.zIndex="-1";
-});
-var showSetE5=document.getElementById("E5");
-showSetE5.addEventListener("mouseover",function () {
-    document.querySelector(".show1RE5").style.zIndex="15";
-});
-showSetE5.addEventListener("mouseout",function () {
-    document.querySelector(".show1RE5").style.zIndex="-1";
-});
-var showSetE6=document.getElementById("E6");
-showSetE6.addEventListener("mouseover",function () {
-    document.querySelector(".show1RE6").style.zIndex="15";
-});
-showSetE6.addEventListener("mouseout",function () {
-    document.querySelector(".show1RE6").style.zIndex="-1";
-});
-var showSetE7=document.getElementById("E7");
-showSetE7.addEventListener("mouseover",function () {
-    document.querySelector(".show1RE7").style.zIndex="15";
-});
-showSetE7.addEventListener("mouseout",function () {
-    document.querySelector(".show1RE7").style.zIndex="-1";
-});
-var showSetF4=document.getElementById("F4");
-showSetF4.addEventListener("mouseover",function () {
-    document.querySelector(".show1RF4").style.zIndex="15";
-});
-showSetF4.addEventListener("mouseout",function () {
-    document.querySelector(".show1RF4").style.zIndex="-1";
-});
-var showSetF5=document.getElementById("F5");
-showSetF5.addEventListener("mouseover",function () {
-    document.querySelector(".show1RF5").style.zIndex="15";
-});
-showSetF5.addEventListener("mouseout",function () {
-    document.querySelector(".show1RF5").style.zIndex="-1";
-});
-var showSetF6=document.getElementById("F6");
-showSetF6.addEventListener("mouseover",function () {
-    document.querySelector(".show1RF6").style.zIndex="15";
-});
-showSetF6.addEventListener("mouseout",function () {
-    document.querySelector(".show1RF6").style.zIndex="-1";
-});
-var showSetG5=document.getElementById("G5");
-showSetG5.addEventListener("mouseover",function () {
-    document.querySelector(".show1RG5").style.zIndex="15";
-});
-showSetG5.addEventListener("mouseout",function () {
-    document.querySelector(".show1RG5").style.zIndex="-1";
-});
+for (const set of sets) {
+  const showSet = document.getElementById(set.id);
+  const showElement = document.querySelector(`.${set.className}`);
+  
+  for (const event of mouseEvents) {
+    showSet.addEventListener(event, () => {
+      showElement.style.zIndex = event === 'mouseover' ? '15' : '-1';
+    });
+  }
+}
