@@ -47,7 +47,7 @@
     position: relative;
     z-index: 1;
     border-radius: 10px;
-    width: 150%;
+    width: 151%;
 }
 [class^="dropDown"] li{
     border-radius: 10px;
