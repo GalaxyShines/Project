@@ -54,6 +54,7 @@
 }
 .dropDown3 ul li{
     height: 35px;
+    width: 100px;
 }
 [class^="dropDown"] li:hover{
     background-color: #b5b5b5;
