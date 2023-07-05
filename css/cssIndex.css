@@ -34,12 +34,20 @@
 .drop1:hover .dropDown1,.drop2:hover .dropDown2,.drop3:hover .dropDown3,.drop4:hover .dropDown4,.drop5:hover .dropDown5{
     display: block;
 }
-[class^="dropDown"]{
+[class^="dropDown"]:not(.dropDown2){
     background-color: azure;
     display: none;
     position: relative;
     z-index: 1;
     border-radius: 10px;
+}
+.dropDown2{
+    background-color: azure;
+    display: none;
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+    width: 7%;
 }
 [class^="dropDown"] li{
     border-radius: 10px;
