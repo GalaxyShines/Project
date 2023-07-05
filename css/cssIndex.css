@@ -34,14 +34,14 @@
 .drop1:hover .dropDown1,.drop2:hover .dropDown2,.drop3:hover .dropDown3,.drop4:hover .dropDown4,.drop5:hover .dropDown5{
     display: block;
 }
-[class^="dropDown"]:not(.dropDown3){
+[class^="dropDown"]:not(.dropDown3,.dropDown2){
     background-color: azure;
     display: none;
     position: relative;
     z-index: 1;
     border-radius: 10px;
 }
-.dropDown3{
+.dropDown3,.dropDown2{
     background-color: azure;
     display: none;
     position: relative;
@@ -52,9 +52,22 @@
 [class^="dropDown"] li{
     border-radius: 10px;
 }
+.dropDown3 ul,.dropDown2 ul{
+    width: 150px;
+    background-color: azure;
+    border-radius: 10px;
+}
 .dropDown3 ul li{
     height: 35px;
     width: 150px;
+    background-color: azure;
+    line-height: 35px;
+}
+.dropDown4 ul li{
+    height: 50px;
+    width: 150px;
+    background-color: azure;
+    line-height: 50px;
 }
 [class^="dropDown"] li:hover{
     background-color: #b5b5b5;
