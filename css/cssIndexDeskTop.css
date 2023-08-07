@@ -6,8 +6,11 @@
     text-decoration: none;
     list-style: none;
 }
-body{
-    background-color: aqua;
+html{
+    background-image: linear-gradient(to bottom,rgb(252, 172, 172),rgb(244, 230, 230));
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 body>div:first-child{
     width: 100%;
@@ -32,4 +35,22 @@ input[type="button"]{
 }
 input[type="button"]:hover{
     font-size: 35px;
+}
+button{
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: white;
+    box-shadow: 4px 4px 8px #808080;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+button:hover{
+    font-size: 18px;
+    transform: translate(3px,3px);
 }

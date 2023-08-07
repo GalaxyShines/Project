@@ -8,9 +8,13 @@
     outline: none;
 }
 body{
-    background-color: aqua;
+    background-image: linear-gradient(to bottom,rgb(252, 172, 172),rgb(244, 230, 230));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
-.menu button{
+button{
 	background-color: white;
 	height: 100px;
 	width: 300px;

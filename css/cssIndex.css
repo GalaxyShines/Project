@@ -10,12 +10,13 @@
 .topArea{
     width: inherit;
     height: 500px;
-    background-color: #414fe4;
+    background-image: linear-gradient(to bottom,rgb(252, 172, 172),white);
 }
 .topArea>ul{
-    background-color: rgb(82, 82, 82);
+    /* background-color: rgba(123, 123, 123, 0.148); */
     width: 100%;
     height: 50px;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.281);
 }
 .topArea>ul>li:not([class^="getMenu"]){
     float: left;
@@ -29,7 +30,7 @@
     margin: 0px 10px;
 }
 .topArea>ul>li:hover{
-    background-color: rgb(52, 52, 52);
+    background-color: rgba(123, 123, 123, 0.195);
 }
 .drop1:hover .dropDown1,.drop2:hover .dropDown2,.drop3:hover .dropDown3,.drop4:hover .dropDown4,.drop5:hover .dropDown5{
     display: block;
