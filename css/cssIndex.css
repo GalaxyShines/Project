@@ -9,14 +9,24 @@
 }
 .topArea{
     width: inherit;
-    height: 500px;
-    background-image: linear-gradient(to bottom,rgb(252, 172, 172),white);
+    height: 85vh;
+    /* background-image: linear-gradient(to bottom,rgb(252, 172, 172),white); */
+    background-image: url(../img/yuanshen.jpg);
+    background-repeat: repeat-x;
+    background-size: 100%;
 }
+/* .center-area{
+    width: 100%;
+    height: 50vh;
+    background-image: url(../img/yuanshen.jpg);
+    background-repeat: repeat-x;
+    background-size: 100%;
+} */
 .topArea>ul{
     /* background-color: rgba(123, 123, 123, 0.148); */
     width: 100%;
     height: 50px;
-    border-bottom: solid 1px rgba(0, 0, 0, 0.281);
+    border-bottom: solid 1px white;
 }
 .topArea>ul>li:not([class^="getMenu"]){
     float: left;
@@ -30,44 +40,52 @@
     margin: 0px 10px;
 }
 .topArea>ul>li:hover{
-    background-color: rgba(123, 123, 123, 0.195);
+    background-color: rgba(0, 0, 0, 0.195);
 }
 .drop1:hover .dropDown1,.drop2:hover .dropDown2,.drop3:hover .dropDown3,.drop4:hover .dropDown4,.drop5:hover .dropDown5{
     display: block;
 }
 [class^="dropDown"]:not(.dropDown3,.dropDown2){
-    background-color: azure;
+    background-color: black;
     display: none;
     position: relative;
     z-index: 1;
     border-radius: 10px;
+    color: white;
+    border: white solid 1px;
 }
 .dropDown3,.dropDown2{
-    background-color: azure;
+    background-color: black;
     display: none;
     position: relative;
     z-index: 1;
     border-radius: 10px;
-    width: 1.5em;
+    width: 150px;
+    border: white solid 1px;
 }
 [class^="dropDown"] li{
+    border-radius: 10px;
+    color: white;
+}
+[class^="getMenu"] ul{
+    border: solid white 1px;
     border-radius: 10px;
 }
 .dropDown3 ul,.dropDown2 ul{
     width: 150px;
-    background-color: azure;
+    background-color: black;
     border-radius: 10px;
 }
 .dropDown3 ul li{
     height: 35px;
     width: 150px;
-    background-color: azure;
+    background-color: none;
     line-height: 35px;
 }
 .dropDown2 ul li{
     height: 50px;
     width: 150px;
-    background-color: azure;
+    background-color: none;
     line-height: 50px;
 }
 [class^="dropDown"] li:hover{
@@ -80,7 +98,7 @@
     display: none;
     position: absolute;
     left: 100%;
-    background-color: white;
+    background-color: black;
     border-radius: 10px;
 }
 .getMenu:nth-child(n) {
