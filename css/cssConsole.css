@@ -1,0 +1,69 @@
+*{
+    outline-style: auto;
+    border: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    /* background-color: #458af3;
+    height: 100vh;
+    width: 100%; */
+}
+.top{
+    width: 100%;
+    height: 8vh;
+    background-color: white;
+}
+.top>p{
+    color: #458af3;
+    font-size: 40px;
+    font-family: "微软雅黑";
+    line-height: 8vh;
+    float: left;
+    width: 50%;
+    margin-left: 50px;
+}
+#content{
+    width: 100%;
+    height: 92vh;
+    background-color: #458af3;
+}
+#left-menu{
+    width: 20%;
+    height: 70vh;
+    border-radius: 15px;
+    margin: 11vh 5%;
+    background-color: aliceblue;
+    float: left;
+}
+#left-menu li{
+    width: 90%;
+    height: 7vh;
+    font-size: 25px;
+    line-height: 7vh;
+    text-align: center;
+    margin: 2vh 5%;
+    border-radius: 15px;
+    float: left;
+    border: solid black 1px;
+    box-shadow: 3px 3px 5px rgb(143, 143, 143);
+}
+li:hover{
+    cursor: pointer;
+    transform: translate(5px,5px);
+}
+#show-area{
+    height: 80vh;
+    margin: 6vh 5%;
+    width: 60%;
+    float: left;
+}
+.show-setting{/*同一区域不同内容轮换展示统一设置*/
+    /*外部必须有定义该区域的父div*/
+    width: 100%;
+    height: 100%;
+    background-color: white;/*改成需要的背景颜色*/
+    display: none;
+}
