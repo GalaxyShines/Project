@@ -62,8 +62,11 @@ li:hover{
 }
 .show-setting{/*同一区域不同内容轮换展示统一设置*/
     /*外部必须有定义该区域的父div*/
-    width: 100%;
-    height: 100%;
+    width: 60%;
+    height: 80vh;
     background-color: white;/*改成需要的背景颜色*/
     display: none;
+    position: absolute;
+}
+#show-1{
 }
