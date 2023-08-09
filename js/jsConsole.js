@@ -1,8 +1,7 @@
 let labelSet=document.getElementById('set-index-label');
 let cssSet=document.getElementById('set-index-css');
-function getId(id){
-    let getElement=document.getElementById(id);
-    return getElement;
+function getId(id) {
+    return document.getElementById(id);
 }
 labelSet.addEventListener('click',function () {
     getId('show-2').style.display="none";
