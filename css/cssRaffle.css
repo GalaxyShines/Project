@@ -9,13 +9,14 @@ body{
     justify-content: center;
     align-items: center;
 }
-div:not(div[id=show]){
+#body{
     background-color: azure;
     border-radius: 15px;
     width: 20%;
     height: 35vh;
     text-align: center;
     padding: 5vh 0;
+    box-shadow: #8c8c8c 4px 4px 8px;
 }
 input[type="text"],input[type=password]{
     width: 75%;

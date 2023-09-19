@@ -11,7 +11,7 @@
     width: inherit;
     height: 85vh;
     /* background-image: linear-gradient(to bottom,rgb(252, 172, 172),white); */
-    background-image: url(../img/yuanshen.jpg);
+    background-image: linear-gradient(to bottom,rgb(88, 104, 255),rgb(130, 159, 255));
     background-repeat: repeat-x;
     background-size: 100%;
 }
